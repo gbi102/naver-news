@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>네이버 뉴스</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  background: #f5f6f7;
+}
+
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 20px;
+  font-size: 22px;
+  color: #03c75a;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 720px;
+  margin: 20px auto;
+  background: white;
+  padding: 25px;
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.meta {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.content {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.button {
+  margin-top: 30px;
+  padding: 12px;
+  background: #03c75a;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.bait {
+  display: none;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.bait h1 {
+  font-size: 34px;
+  color: #ff4d4f;
+}
+
+.bait img {
+  width: 220px;
+  margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">NAVER 뉴스</div>
+
+<div class="container" id="article">
+  <div class="title">
+    중복상장 전격 허용 검토… IPO 시장 ‘대격변’ 예고
+  </div>
+
+  <div class="meta">
+    입력 2026.04.01. 오전 8:12 | 수정 2026.04.01. 오전 8:45
+  </div>
+
+  <div class="content">
+    정부와 금융당국이 중복상장 규제 완화를 검토 중인 것으로 확인됐다.<br><br>
+
+    금융위원회와 한국거래소는 긴급 회의를 통해 자회사 IPO 규제 개선안을 논의한 것으로 알려졌다.<br><br>
+
+    업계에서는 이번 조치가 현실화될 경우 대형 IPO 시장 구조에 상당한 변화가 불가피할 것으로 보고 있다.<br><br>
+
+    한 증권사 관계자는 “사실상 금기였던 영역이 열리는 것”이라며 “딜 구조 전반에 영향이 예상된다”고 말했다.<br><br>
+
+    ※ 기사 전문은 아래에서 확인할 수 있습니다.
+  </div>
+
+  <div class="button" onclick="showBait()">
+    기사 전문 보기
+  </div>
+</div>
+
+<div class="container bait" id="bait">
+  <h1>🎣 월척이다!!!</h1>
+  <p>만우절 낚시 성공 😎</p>
+  <p>IPO 담당자 반응 확인 완료 📈</p>
+  <img src="https://cdn-icons-png.flaticon.com/512/616/616490.png">
+</div>
+
+<script>
+function showBait() {
+  document.getElementById("article").style.display = "none";
+  document.getElementById("bait").style.display = "block";
+}
+</script>
+
+</body>
+</html>
